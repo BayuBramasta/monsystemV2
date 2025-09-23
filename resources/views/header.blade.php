@@ -36,7 +36,7 @@
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.php?page=status">About</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="reservasi">Rerservation</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-2 text-white rounded-4" href="login.blade.php" style="background-color: #1475b2ff; margin-top:15px; margin-right:15px;">Login</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-2 text-white rounded-4" href="login" style="background-color: #1475b2ff; margin-top:15px; margin-right:15px;">Login</a></li>
             </ul>
         </div>
 

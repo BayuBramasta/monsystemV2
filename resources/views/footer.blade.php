@@ -1,11 +1,6 @@
 <!-- Footer-->
 <footer class="border-top">
     <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-xs-4 border-right-white-in-mobile"></div>
-            </div>
-        </div>
         <div class="small text-center text-muted fst-italic">&copy;2025. Institut Teknologi Sepuluh Nopember</div>
     </div>
 </footer>

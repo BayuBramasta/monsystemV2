@@ -1,26 +1,9 @@
-<?php 
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin</title>
+@extends('index')
+@section('title', 'reservasi')
+@section('content')
   <title>Computer Reservation</title>
 
   <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Core theme CSS (mungkin stylesheet custom kamu) -->
-  <link href="./dist/css/styles2.css" rel="stylesheet" />
-
-  <!-- datatables -->
-  <link href="./dist/css/datatables/dataTables.bootstrap5.css" rel="stylesheet" />
-  <link href="./dist/css/datatables/responsive.bootstrap5.css" rel="stylesheet" />  
-</head>
 
 <body>
     <div class="container">
