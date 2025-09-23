@@ -9,6 +9,8 @@
   <title>Admin</title>
   <title>Computer Reservation</title>
 
+  <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,7 +30,13 @@
                         <?= htmlspecialchars($_GET['error']) ?>
                     </div>
                 <?php endif; ?>
-                <h1>Login</h1>
+                <h1>
+                Login 
+                    <span style="font-weight:700; color: rgb(0, 0, 121);">
+                        for Admin
+                    </span>
+                </h1>
+
                 <div class="form-group mb-3">
                     <input type="text" name="username" class="form-control" id="username" placeholder="Enter your username" required>
                 </div>
@@ -37,7 +45,7 @@
                     <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                 </div>
 
-                <button type="submit" class="btn">Login</button>
+                <button type="submit">Login</button>
             </form>
     </div>
 </body>
