@@ -1,0 +1,24 @@
+.container{
+    padding: 4%;
+    margin-top: 2%;
+    width: 60rem;
+}
+.container input{
+    border:  none;
+    border-bottom: 1px solid rgb(157, 157, 157);
+    border-radius: 0;
+    width: 60rem;
+    padding-top: 2rem;
+}
+.container h1{
+    margin-bottom: 3rem;
+    font-size: 50px;
+}
+.container button{
+    margin-top: 2rem;
+    font-size: 17px;
+    background-color: #0D47A1;
+    color: aliceblue;
+    padding-left: 19px;
+    padding-right: 19px;
+}

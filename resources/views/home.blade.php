@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Page Header-->
 <header class="masthead" style="background-image: url('dist/assets/img/labcom2.jpg')">
     <div class="container position-relative px-4 px-lg-5">
@@ -74,3 +75,22 @@
     </div>
 </div>
         
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <p class="fs-1">Hello World</p>
+    </div>
+</body>
+
+</html>
+>>>>>>> f48cb9d (menambahkan bootstrap dan jquery)
