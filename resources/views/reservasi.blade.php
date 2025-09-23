@@ -1,3 +1,6 @@
+@extends('index')
+@section('title', 'reservasi')
+@section('content')
 <!-- Main Content-->
 <main class="mb-4 mt-5">
     <div class="container-fluid px-4 px-lg-5">
@@ -43,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="row">
+                        <div class="row">
                             <div class="col-md-12">
                                 <div class="form-floating">
                                     <input class="form-control" id="datepicker" name="tanggal" type="text" placeholder="Enter your phone tanggal running..." data-sb-validations="required" />
@@ -53,10 +56,11 @@
                         </div>
                         <br />
                         <!-- Submit Button-->
-                        <input class="btn btn-primary text-uppercase" value="submit" type="submit"/>
+                        <input class="btn btn-primary text-uppercase" value="submit" type="submit" />
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </main>
+@endsection
