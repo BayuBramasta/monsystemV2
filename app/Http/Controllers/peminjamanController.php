@@ -3,15 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 
 class peminjamanController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): View
     {
         //
+        $peminjaman = DB::table('tb_peminjaman')->get();
+        return view('status', compact('peminjaman', 'peminjaman'));
     }
 
     /**
@@ -36,6 +40,24 @@ class peminjamanController extends Controller
     public function show(string $id)
     {
         //
+        $peminjaman = DB::table('tb_peminjaman')->get();
+        $peminjaman = $peminjaman->select(
+            'id_peminjaman',
+            'nama_mahasiswa',
+            'nrp',
+            'telp_mahasiswa',
+            'pembimbing',
+            'id_komputer',
+            'softwere',
+            'status',
+            'created_at',
+            'tanggal_running',
+            'tanggal_selesai',
+            'bukti_running',
+            'bukti_selesai'
+        )->where('id_peminjaman', '=', $id)->get('*');
+        var_dump($peminjaman);
+        // return view('detail');
     }
 
     /**

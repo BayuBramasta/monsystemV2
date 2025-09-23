@@ -1,5 +1,5 @@
 @extends('index')
-@section('title', 'reservasi')
+@section('title', 'status')
 @section('content')
 <!-- Main Content-->
 <main class="container-fluid mt-5 mb-4">
@@ -17,13 +17,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($peminjaman as $data)
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{ $loop -> iteration }}</td>
+                            <td>{{ $data -> nama_mahasiswa }}</td>
+                            <td>{{ $data -> nrp }}</td>
+                            <td>{{ $data -> status }}</td>
+                            <td><a href="{{ route('detail.show',['id'=>$data->id_peminjaman]) }}" class="btn btn-sm btn-primary">Detail</a></td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
