@@ -1,3 +1,6 @@
+@extends('index')
+@section('title', 'reservasi')
+@section('content')
 <!-- Main Content-->
 <main class="container-fluid mt-5 mb-4">
     <div class="container-fluid px-4 px-lg-5">
@@ -14,24 +17,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        require $_SERVER['DOCUMENT_ROOT'] . "/monsystem/controller/controller_status.php";
-                        $itteration = 1;
-                        $Status = new controllerStatus();
-                        $tb_peminjaman = $Status->show();
-                        while ($data = mysqli_fetch_array($tb_peminjaman)):
-                        ?>
-                            <tr>
-                                <td><?= $itteration++ ?></td>
-                                <td><?= $data["nama_mahasiswa"] ?></td>
-                                <td><?= $data["nrp"] ?></td>
-                                <td><?= $data["status"] ?></td>
-                                <td><a href="index.php?page=detail&id_detail=<?= $data['id_peminjaman'] ?>" class="btn btn-sm btn-primary">Detail</a></td>
-                            </tr>
-                        <?php endwhile; ?>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </main>
+@endsection
