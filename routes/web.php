@@ -15,3 +15,9 @@ Route::get('/reservasi', function () {
 Route::get('/status', function () {
     return view('status');
 });
+Route::get('/lab', function () {
+    return view('lab');
+});
+Route::get('/teknisi', function () {
+    return view('teknisi');
+});

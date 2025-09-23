@@ -26,7 +26,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
 
-        <a class="navbar-brand" href="index.html" style="width: 20%;"><img src="./dist/assets/img/logo-its.png" alt="" style="width: 35.5%; margin-left:15%;" class="logo"></a>
+        <a class="navbar-brand" href="index.html" style="width: 20%;"><img src="{{ asset('img/logo-its.png') }}" alt="" style="width: 35.5%; margin-left:15%;" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
@@ -34,6 +34,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lab">Lab</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="teknisi">Teknisi</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.php?page=status">About</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="reservasi">Rerservation</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-2 text-white rounded-4" href="login" style="background-color: #1475b2ff; margin-top:15px; margin-right:15px;">Login</a></li>
