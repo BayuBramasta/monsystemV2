@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class peminjaman extends Model
 {
     /** @use HasFactory<\Database\Factories\PeminjamanFactory> */
-    use HashFactory;
+    use HasFactory;
 }

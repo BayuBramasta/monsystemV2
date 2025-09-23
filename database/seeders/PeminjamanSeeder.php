@@ -17,7 +17,7 @@ class PeminjamanSeeder extends Seeder
     {
         //
         DB::table('tb_peminjaman')->insert([
-            'nama_mahasiswa' => "chelsea",
+            'nama_mahasiswa' => "dean",
             'nrp' => '500987654321',
             'telp_mahasiswa' => '0897654321',
             'pembimbing' => 'Adi',
