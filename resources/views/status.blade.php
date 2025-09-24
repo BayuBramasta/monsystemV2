@@ -3,24 +3,28 @@
 @section('content')
 
 <style>
-    *{
+    * {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
+
     ::-webkit-scrollbar {
         width: 10px;
     }
+
     ::-webkit-scrollbar-track {
-        background: transparent; 
+        background: transparent;
     }
+
     ::-webkit-scrollbar-thumb {
-        background-color: #c1c1c1; 
+        background-color: #c1c1c1;
         border-radius: 20px;
-        }
+    }
 
     .card {
         position: relative;
         overflow: hidden;
     }
+
     .card figcaption {
         position: absolute;
         bottom: -4rem;
@@ -30,18 +34,18 @@
         width: 100%;
         text-align: center;
         transition: all 200ms;
-    } 
+    }
+
     .card:hover figcaption {
         bottom: 0;
     }
-
 </style>
 
 <!-- Main Content-->
 <main class="container-fluid mt-5 mb-4">
     <div class="container-fluid px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-           <div class="container-lg mt-5">
+            <div class="container-lg mt-5">
                 <div class="row" style="height: 35vh">
                     <div class="col-sm-4">
                         <a href="lab">
@@ -94,7 +98,7 @@
                         </a>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
 </main>
 @endsection
