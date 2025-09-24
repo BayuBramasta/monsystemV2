@@ -37,11 +37,10 @@ class peminjamanController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id): View
     {
         //
-        $peminjaman = DB::table('tb_peminjaman')->get();
-        $peminjaman = $peminjaman->select(
+        $peminjaman = DB::table('tb_peminjaman')->select(
             'id_peminjaman',
             'nama_mahasiswa',
             'nrp',
@@ -55,9 +54,9 @@ class peminjamanController extends Controller
             'tanggal_selesai',
             'bukti_running',
             'bukti_selesai'
-        )->where('id_peminjaman', '=', $id)->get('*');
-        var_dump($peminjaman);
-        // return view('detail');
+        )->where('id_peminjaman', '=', $id)->get();
+        // var_dump($peminjaman);
+        return view('detail', compact('peminjaman', 'peminjaman'));
     }
 
     /**
