@@ -10,8 +10,7 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/reservasi', function () {
-    return view('reservasi');
-});
+Route::get('/reservasi', [peminjamanController::class, 'create'])->name('reservasi.create');
+Route::post('/reservasi', [peminjamanController::class, 'store'])->name('reservasi.store');
 Route::get('/status', [peminjamanController::class, 'index'])->name('status.index');
 Route::get('/detail/{id}/show', [peminjamanController::class, 'show'])->name('detail.show');

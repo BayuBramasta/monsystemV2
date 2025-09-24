@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
+use App\Models\peminjaman;
+use Faker\Provider\ar_EG\Person;
 
 class peminjamanController extends Controller
 {
@@ -21,9 +23,10 @@ class peminjamanController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(): View
     {
         //
+        return view('reservasi');
     }
 
     /**
@@ -32,6 +35,19 @@ class peminjamanController extends Controller
     public function store(Request $request)
     {
         //
+        $data = $request->validate([
+            'nama' => 'required',
+            'nrp' => 'required',
+            'telp' => 'required',
+            'pembimbing' => 'required',
+            'softwere' => 'required',
+            'tanggal' => 'required',
+        ]);
+        DB::insert(
+            'insert into tb_peminjaman (nama_mahasiswa, nrp, telp_mahasiswa,pembimbing,softwere,tanggal_running) values (?, ?, ?, ?, ?, ?)',
+            [$data['nama'], $data['nrp'], $data['telp'], $data['pembimbing'], $data['softwere'], $data['tanggal']]
+        );
+        return view('reservasi');
     }
 
     /**
@@ -55,7 +71,6 @@ class peminjamanController extends Controller
             'bukti_running',
             'bukti_selesai'
         )->where('id_peminjaman', '=', $id)->get();
-        // var_dump($peminjaman);
         return view('detail', compact('peminjaman', 'peminjaman'));
     }
 

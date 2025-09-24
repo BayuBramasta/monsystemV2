@@ -9,7 +9,8 @@
                 <!-- <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p> -->
                 <p class="fs-1">Form Reservasi</p>
                 <div class="my-5">
-                    <form id="contactForm" method="POST" action="controller/controller_reservasi.php" data-sb-form-api-token="API_TOKEN">
+                    <form id="contactForm" method="POST" action="{{ route('reservasi.store') }}" data-sb-form-api-token="API_TOKEN">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-floating">

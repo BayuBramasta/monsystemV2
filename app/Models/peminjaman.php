@@ -9,4 +9,13 @@ class peminjaman extends Model
 {
     /** @use HasFactory<\Database\Factories\PeminjamanFactory> */
     use HasFactory;
+    protected $table = 'tb_peminjaman';
+    protected $fillable = [
+        'nama_mahasiswa',
+        'nrp',
+        'telp_mahasiswa',
+        'pembimbing',
+        'softwere',
+        'tanggal_running'
+    ];
 }
